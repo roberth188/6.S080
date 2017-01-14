@@ -1,0 +1,55 @@
+sl = 20        # side length (in feet) of the overall finished garden
+rs = 1         # recommended spacing (in feet) between plants
+ds = 30        # the depth in feet (in feet) of the soil in the flowerbeds
+dg = 20        # the depth (in feet) of the gravel usedi n the filing areas
+
+pi = 3.14159265
+
+r = sl / 4     # radii of the circles and semicircles
+a = pi * r**2  # area of the circle bed
+
+
+'''
+
+Note : because the diameters of the semicircles are the same, the
+total area of the flower bed can be thought of as three circles.
+
+'''
+
+
+nps = (int(a / (2 * rs**2))) # number of plants that can fit in the semicircle
+npc = int(a / (rs**2))       # number of plants that can fit in the circle
+
+ 
+print("Number of plants that fit in a semicircle:")
+print(nps)
+
+print("Number of plants that can fit in the circle")
+print(npc)
+
+print("The total number of plants that can fit in the garden:")
+print(nps * 4 + npc)
+
+
+
+print("Cubic Yards volume of soil in semicircle")
+print(ds * a / (2 * 27))
+
+print("Cubic Yards volume of soil in circle")
+print(ds * a / 27)
+
+print("Cubic Yards volume of soil in flowerbed")
+print(3 * ds * a / 27)
+
+
+
+
+print("Cubic Yards volume of gravel needed for the whole garden")
+print(dg*(sl**2 - 3*a) / 27)
+
+
+
+
+
+
+

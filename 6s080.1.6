@@ -1,0 +1,24 @@
+year = 2017
+month = 1   # Ie, 1 = Jan, etc 
+day = 9
+
+y = year
+m1 = month
+d = day
+
+if (m1 == 1) or (m1 == 2):
+    m1 = m1+12
+    y = y-1
+
+y2 = y % 100
+
+cint = int(y / 100)
+
+
+w =  (d + int(13*(m1+1)/5) + y2 + int(y2 / 4) + int(cint / 4) - 2*cint)
+
+
+
+
+print(w % 7)
+

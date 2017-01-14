@@ -1,0 +1,12 @@
+interest_rate = 0.0
+
+
+r = interest_rate
+t = 1
+if interest_rate == 0:
+    print("NEVER")
+else:
+    while (1*(1 + r)**(t) < 2):
+        t = t+1
+    print(t)
+    

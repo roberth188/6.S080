@@ -1,0 +1,11 @@
+poly = [0, 0, 1/2]
+
+pol = []
+
+t = 0
+for var in poly:
+    if t > 0:
+        vary = var * t
+        pol = pol + [vary]
+    t = t+1 
+print(pol)

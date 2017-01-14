@@ -1,0 +1,10 @@
+poly = [0, 0, 1/2]
+const = 1
+pol = [const]
+
+t = 0
+for var in poly:
+    vary = var / (t+1)
+    pol = pol + [vary]
+    t = t+1 
+print(pol)

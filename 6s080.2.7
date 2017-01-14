@@ -1,0 +1,16 @@
+p_d = 1
+
+p = p_d
+
+c = 0
+
+r = int(p/2) + 1
+
+for varx in range(-r, r):
+    for vary in range(-r, r):
+        if ((varx**2 + vary**2)**0.5 <= p/2):
+            c = c+1
+
+
+print(4*(c / p**2))
+        

@@ -1,0 +1,21 @@
+pizza_size = 'medium'
+pizza_toppings = ['anchovies', 'bacon', 'onion', 'pepperoni', 'basil']
+
+base_cost = 0
+ba = 0
+
+for var in pizza_toppings:
+    if var == "bacon":
+        ba = 1
+    if var == "anchovies":
+        ba = 1
+
+if pizza_size == "small":
+    base_cost = 14
+if pizza_size == "medium":
+    base_cost = 16
+if pizza_size == "large":
+    base_cost = 18
+
+
+print(base_cost + ba*5 + (len(pizza_toppings)*base_cost/10))

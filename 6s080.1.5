@@ -1,0 +1,20 @@
+kwh_used = 1000
+
+
+
+if True:
+    v = kwh_used  * 0.44
+if kwh_used > 500:
+    v += (kwh_used - 500) * 0.3
+if kwh_used > 1500:
+    v += (kwh_used - 1500) * 0.51
+if kwh_used > 2500:
+    v += (kwh_used - 2500) * 0.65 
+
+
+
+
+
+
+print(v * 1.2)
+

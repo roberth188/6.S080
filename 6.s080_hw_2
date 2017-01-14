@@ -1,0 +1,2 @@
+celsius = 27
+print(celisus * 1.8 + 32)
